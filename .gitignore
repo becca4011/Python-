@@ -117,11 +117,14 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv2
 env/
 venv/
+venv2/
 ENV/
 env.bak/
 venv.bak/
+venv2.bak/
 pythonenv*
 
 # Spyder project settings
@@ -159,5 +162,7 @@ dmypy.json
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+
+result/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,code,virtualenv

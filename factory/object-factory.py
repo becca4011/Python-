@@ -1,28 +1,36 @@
 from faker import Faker
+import control_excel as xl
 
 class Ipman:
-    def __init__(self, name, address, ip): # 클래스 함수 (메소드 X)
+    def __init__(self, name, address, ip):
         self.name = name
         self.address = address
         self.ip = ip
 
-    def show_data(self): # 메소드
+    def show_data(self):
         print('name :', self.name)
         print('address :', self.address)
         print('ip :', self.ip)
-
-if __name__ == "__main__":
+        
+# 끝남
+def faker_test():
     f = Faker('ko_KR')
-
-    input() # 가상환경일 경우, 버퍼에 가상환경 주소가 남아있는 것을 해결하기 위해 input을 사용
-
-    number = input('몇 개를 생성하겠습니까? > ')
-    IPmans = [] # Ipman을 저장할 list
+    
+    # 가상환경 쓸 경우, 버퍼에 가상환경 주소가 남아 있는 것을 해결하기 위해
+    input()
+    
+    number = input('몇개 생성할래? > ')
+    IPmans = []
 
     for i in range(int(number)):
-        tmp = IPmans.append(Ipman(f.name(), f.address(), f.ipv4_private()))
-
+        IPmans.append(Ipman(f.name(), f.address(), f.ipv4_private()))
+        
     for j in IPmans:
         j.show_data()
         
     print(len(IPmans))
+
+
+if __name__ == "__main__":
+    # faker_test()
+    xl.write_excel()
