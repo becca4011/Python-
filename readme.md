@@ -11,3 +11,7 @@
 
 - 파이썬으로 객체 직렬화, 저장, 불러오기
 - faker 모듈 사용
+
+## faker test
+
+![ ](./image/faker.png)
