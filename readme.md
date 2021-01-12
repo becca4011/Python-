@@ -15,4 +15,4 @@
 
 ## faker test
 
-![faker test](./image/faker.png)
+![faker test](/image/faker.png)
