@@ -10,8 +10,9 @@
 ## About Project
 
 - 파이썬으로 객체 직렬화, 저장, 불러오기
-- faker 모듈 사용
+- faker 모듈을 사용하여 객체 생성
+- openpyxl을 사용하여 excel 파일 다뤄보기
 
 ## faker test
 
-![ ](./image/faker.png)
+![faker test](./image/faker.png)
