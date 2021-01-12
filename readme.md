@@ -15,4 +15,4 @@
 
 ## faker test
 
-![faker test](/image/faker.png)
+![faker test](C:/Users/becca.DESKTOP-85UQBE3/Desktop/Python-object-serialization/image/faker.png)
